@@ -40,8 +40,55 @@
                         </tr>
                 </tbody>
         </table>
+        <h1>Formulaire</h1>
+    <form action="#" method="post">
+        <!-- Champ Pseudo -->
+        <label for="pseudo">Pseudo :</label>
+        <input type="text" id="pseudo" name="pseudo" required>
+        <br><br>
 
+        <!-- Champ Mot de passe -->
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
 
-        
+        <!-- Champ Ressaisir mot de passe -->
+        <label for="confirm_password">Ressaisir mot de passe :</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+        <br><br>
+
+        <!-- OS préféré (choix unique) -->
+        <label>OS préféré :</label><br>
+        <input type="radio" id="windows" name="os" value="Windows">
+        <label for="windows">Windows</label><br>
+        <input type="radio" id="mac" name="os" value="Mac">
+        <label for="mac">Mac</label><br>
+        <input type="radio" id="linux" name="os" value="Linux">
+        <label for="linux">Linux</label>
+        <br><br>
+
+        <!-- Vous possédez (choix multiple) -->
+        <label>Vous possédez :</label><br>
+        <input type="checkbox" id="ordinateur" name="devices" value="ordinateur">
+        <label for="ordinateur">Ordinateur</label><br>
+        <input type="checkbox" id="smartphone" name="devices" value="smartphone">
+        <label for="smartphone">Smartphone</label><br>
+        <input type="checkbox" id="tablette" name="devices" value="tablette">
+        <label for="tablette">Tablette</label>
+        <br><br>
+
+        <!-- Profession (liste déroulante) -->
+        <label for="profession">Profession :</label>
+        <select id="profession" name="profession">
+            <option value="etudiant">Étudiant</option>
+            <option value="developpeur">Développeur</option>
+            <option value="enseignant">Enseignant</option>
+            <option value="autre">Autre</option>
+        </select>
+        <br><br>
+
+        <!-- Bouton soumettre -->
+        <button type="submit">Soumettre</button>
+    </form> 
 </body>
 </html>
